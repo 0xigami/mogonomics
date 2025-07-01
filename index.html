@@ -252,7 +252,7 @@
 
             // Create a link for the token name using the relevant DexScreener page
             const dexscreenerLink = `https://dexscreener.com/${network}/${poolAddress}`;
-            document.getElementById("status").innerHTML = `Results for <a href="${dexscreenerLink}" target="_blank">${tokenName}</a>: (<a href="https://docs.imf.bz/docs/governance#listing-criteria" target="_blank">listing criteria</a>)`;
+            document.getElementById("status").innerHTML = `Results for <a href="${dexscreenerLink}" target="_blank">${tokenName}</a> (<a href="https://docs.imf.bz/docs/governance#listing-criteria" target="_blank">listing criteria</a>):`;
           } catch (err) {
             console.error(err);
             document.getElementById("status").textContent = `Error: ${err.message}`;
